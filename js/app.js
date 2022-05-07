@@ -3,15 +3,33 @@
 const operation = document.getElementById("operation");
 const result = document.getElementById("result");
 
-document.querySelector('.ball').addEventListener('click', (e)=>{
-    themeChange();
+const tema = localStorage.getItem('tema');
+if (tema) {
+    themeChange(tema);
+}
+document.querySelector('.ball').addEventListener('click', (e) => {
     e.target.classList.toggle('ball-move');
+    if (document.body.className == 'light-theme') {
+        localStorage.setItem('tema', 'dark-theme');
+        themeChange('dark-theme');
+    } else {
+        localStorage.setItem('tema', 'light-theme');
+        themeChange('light-theme');
+    }
+
 });
 
-function themeChange(){
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
-    
+
+function themeChange(tema) {
+    document.body.className = tema
+    const ball = document.querySelector('.ball');
+
+    if (tema == 'dark-theme') {
+        ball.classList.add('ball-move');
+    } else
+    if (tema == 'light-theme') {
+        ball.classList.remove('ball-move');
+    }
 };
 
 function show(param) {
