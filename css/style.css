@@ -1,8 +1,8 @@
 :root {
     --black: black;
     --white: white;
-    --lightPurple: rgb(183, 47, 218);
-    --darkPurple: rgb(58, 4, 71);
+    --lightPurple: rgb(168, 62, 255);
+    --darkPurple: rgb(51, 9, 61);
 }
 
 * {
@@ -14,10 +14,8 @@
 .display-result {
     width: 100%;
     height: 50px;
-    background-color: var(--bgColor);
     text-align: right;
-    border: 1px solid black;
-    border-radius: 15px 15px 0 0;
+    border-radius: 13px 13px 0 0;
 }
 
 #operation,
@@ -28,9 +26,10 @@
 .content {
     width: 40%;
     margin: 0 auto;
-    border: 1px solid var(--fontColor);
+    border: 2px solid var(--fontColor);
     margin-top: 5%;
     border-radius: 15px;
+    background-color: var(--bgColor);
 }
 
 .display-operation {
@@ -106,11 +105,11 @@ body {
 }
 
 .extremitie-left {
-    border-radius: 0 0 0 15px;
+    border-radius: 0 0 0 13px;
 }
 
 .extremitie-right {
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 13px 0;
 }
 
 .btn:focus {
@@ -143,16 +142,12 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: #ffffff;
-    transition: left 1s;
+    transition: left 0.5s;
 }
 
 .ball-move {
     left: calc(100% - 20px);
     background-color: #000000;
-}
-
-.dark {
-    background-color: #39a2db;
 }
 
 .theme-container {
@@ -208,15 +203,19 @@ width: fit-content; */
 
 ul {
     list-style-type: none;
-    width: 100%;
     text-align: center;
+    padding: 0;
 }
 
 li {
     display: inline-block;
 }
 
-@media screen and (max-width:400px) {
+.info-content {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
     .content {
         width: 50%;
     }
