@@ -191,7 +191,7 @@ width: fit-content; */
 }
 
 .site-info {
-    height: 50px;
+    height: fit-content;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
@@ -228,6 +228,7 @@ li {
 
 .info-content {
     margin: 0 auto;
+    height: 100%;
 }
 
 @media screen and (max-width: 461px) {
@@ -245,10 +246,10 @@ li {
 .main-content {
     margin: 0 auto;
     text-align: center;
-    height: 100%;
     width: 70%;
     background: none repeat scroll 0 0 var(--bgColor);
     position: relative;
+    height: 100%;
 }
 
 .main-content:before {
