@@ -12,134 +12,137 @@
 </head>
 
 <body class="light-theme">
-    <header>
-        <div class="header-container">
-            <div class="header">
-                Clique para mudar o tema
-            </div>
-            <div class="theme-container">
-                <div class="theme-button">
-                    <div class="ball"></div>
+    <div class="main-content">
+
+
+        <header>
+            <div class="header-container">
+                <div class="header">
+                    Clique para mudar o tema
+                </div>
+                <div class="theme-container">
+                    <div class="theme-button">
+                        <div class="ball"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="content">
-            <div class="display-result">
+        </header>
+        <main>
+            <div class="content">
+                <div class="display-result">
 
-                <span id="operation" class="display-operation">
+                    <span id="operation" class="display-operation">
                 
                 </span>
 
-                <br>
+                    <br>
 
-                <span id="result">
+                    <span id="result">
                 0
                 </span>
 
 
+                </div>
+
+                <div class="container button-container">
+
+
+                    <div class="row">
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button AC-button" onclick="clickAC()">AC</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button operation-button" onclick="clickDel()">DEL</button>
+                        </div>
+                        <div class="col-4 button-space">
+                            <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('÷')">÷</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('7')">7</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('8')">8</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('9')">9</button>
+                        </div>
+                        <div class="col-4 button-space">
+                            <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('x')">x</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('4')">4</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('5')">5</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('6')">6</button>
+                        </div>
+                        <div class="col-4 button-space">
+                            <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('-')">-</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('1')">1</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('2')">2</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('3')">3</button>
+                        </div>
+                        <div class="col-4 button-space">
+                            <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('+')">+</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button extremitie-left" onclick="show('0')">0</button>
+                        </div>
+                        <div class="col button-space">
+                            <button type="button" class="btn btn-outline-dark button" onclick="show('.')">.</button>
+                        </div>
+                        <div class="col-4 button-space">
+                            <button type="button" class="btn btn-outline-dark button result-button extremitie-right" onclick="clickResult()">=</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </main>
 
-            <div class="container button-container">
-
-
-                <div class="row">
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button AC-button" onclick="clickAC()">AC</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button operation-button" onclick="clickDel()">DEL</button>
-                    </div>
-                    <div class="col-4 button-space">
-                        <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('÷')">÷</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('7')">7</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('8')">8</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('9')">9</button>
-                    </div>
-                    <div class="col-4 button-space">
-                        <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('x')">x</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('4')">4</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('5')">5</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('6')">6</button>
-                    </div>
-                    <div class="col-4 button-space">
-                        <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('-')">-</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('1')">1</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('2')">2</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('3')">3</button>
-                    </div>
-                    <div class="col-4 button-space">
-                        <button type="button" class="btn btn-outline-dark button operation-button" onclick="show('+')">+</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button extremitie-left" onclick="show('0')">0</button>
-                    </div>
-                    <div class="col button-space">
-                        <button type="button" class="btn btn-outline-dark button" onclick="show('.')">.</button>
-                    </div>
-                    <div class="col-4 button-space">
-                        <button type="button" class="btn btn-outline-dark button result-button extremitie-right" onclick="clickResult()">=</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="site-info">
-        <div class="info-content">
-            <span>
+        <footer class="site-info">
+            <div class="info-content">
+                <span>
                 &copy; Pedro Ryago 2022 - Todos direitos reservados. <br>
             </span>
-            <span>
+                <span>
                     Redes sociais:
             </span>
-            <ul>
-                <li>
-                    <a href="https://github.com/PedroRyago" target="_blank">
-                        <img class="github-link" src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt="github">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/pedro-ryago" target="_blank">
-                        <img class="linkedin-link" src="https://cdn.icon-icons.com/icons2/2992/PNG/512/linkedin_logo_icon_187302.png" alt="github">
-                    </a>
-                </li>
-            </ul>
-        </div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/PedroRyago" target="_blank">
+                            <img class="github-link" src="img/githubLogo.png" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/pedro-ryago" target="_blank">
+                            <img class="linkedin-link" src="img/linkedinLogo.jpg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    </footer>
-
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
     <noscript>You need to enable Javascript to view the full site.</noscript>
