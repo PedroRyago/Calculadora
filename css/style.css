@@ -1,8 +1,6 @@
 :root {
     --black: black;
     --white: white;
-    --lightPurple: rgb(168, 62, 255);
-    --darkPurple: rgb(51, 9, 61);
 }
 
 * {
@@ -101,7 +99,21 @@ body {
 }
 
 body {
-    background-color: var(--bodyBg);
+    background: linear-gradient(-45deg, #504949, #4b4646, #706969, #5a5252);
+    background-size: 400% 400%;
+    animation: gradient 15s infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .extremitie-left {
@@ -159,13 +171,11 @@ body {
 .dark-theme {
     --bgColor: var(--black);
     --fontColor: var(--white);
-    --bodyBg: var(--darkPurple);
 }
 
 .light-theme {
     --bgColor: var(--white);
     --fontColor: var(--black);
-    --bodyBg: var(--lightPurple);
 }
 
 .header-container {
@@ -185,7 +195,7 @@ width: fit-content; */
     font-weight: 500;
     font-style: oblique;
     color: var(--fontColor);
-    bottom: 5px;
+    bottom: 0px;
     position: absolute;
     text-align: center;
     line-height: 25px;
