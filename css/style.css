@@ -185,9 +185,10 @@ width: fit-content; */
     font-weight: 500;
     font-style: oblique;
     color: var(--fontColor);
-    bottom: 20px;
+    bottom: 5px;
     position: absolute;
     text-align: center;
+    line-height: 25px;
 }
 
 .github-link {
@@ -206,6 +207,7 @@ ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
+    display: inline-block;
 }
 
 li {
