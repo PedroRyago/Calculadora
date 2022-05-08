@@ -24,7 +24,7 @@
 }
 
 .content {
-    width: 40%;
+    width: 35%;
     margin: 0 auto;
     border: 2px solid var(--fontColor);
     margin-top: 5%;
@@ -184,7 +184,7 @@ width: fit-content; */
     font-weight: 500;
     font-style: oblique;
     color: var(--fontColor);
-    bottom: 0;
+    bottom: 30px;
     position: absolute;
     text-align: center;
 }
