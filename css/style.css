@@ -197,7 +197,7 @@ width: fit-content; */
     font-weight: 500;
     font-style: oblique;
     color: var(--fontColor);
-    bottom: 15px;
+    bottom: 0;
     position: absolute;
     text-align: center;
     line-height: 25px;
