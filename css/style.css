@@ -22,24 +22,12 @@
 }
 
 .content {
-<<<<<<< HEAD
-=======
-    width: 50%;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     margin: 0 auto;
     border: 2px solid var(--fontColor);
     margin-top: 5%;
     border-radius: 15px;
     background-color: var(--bgColor);
-<<<<<<< HEAD
     padding: 0;
-=======
-}
-
-.display-operation {
-    color: var(--fontColor);
-    font-weight: bolder;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
 }
 
 .button {
@@ -47,14 +35,10 @@
     width: 100%;
     font-weight: 500;
     background: var(--bgColor);
-<<<<<<< HEAD
 }
 
 .embroidered {
     border: 1px solid var(--fontColor)
-=======
-    border: 1px solid var(--fontColor);
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
 }
 
 .button:hover {
@@ -115,11 +99,7 @@ body {
 }
 
 body {
-<<<<<<< HEAD
     background: linear-gradient(-45deg, #fc00ff, #00dbde);
-=======
-    background: linear-gradient(-45deg, #af13ce, #35e1ff, #ff00d9, #21d3ff);
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -136,17 +116,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-=======
-.extremitie-left {
-    border-radius: 0 0 0 13px;
-}
-
-.extremitie-right {
-    border-radius: 0 0 13px 0;
-}
-
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
 .btn:focus {
     outline: none;
     box-shadow: none;
@@ -165,28 +134,17 @@ body {
     height: 20px;
     border-radius: 25px;
     box-shadow: 0 0 2.5px 0 #39a2db59;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     background-color: rgb(0, 183, 255);
 }
 
 .ball {
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     position: absolute;
     top: 0;
     left: 0;
     width: 20px;
     height: 100%;
-<<<<<<< HEAD
     border: 1px solid var(--fontColor);
-=======
-    border: 1px solid;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     border-radius: 50%;
     background-color: #ffffff;
     transition: left 0.5s;
@@ -213,20 +171,12 @@ body {
 }
 
 .header-container {
-<<<<<<< HEAD
-=======
-    /* background-color: var(--fontColor);
-color: var(--bgColor);
-border-radius: 5px;
-width: fit-content; */
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
     color: var(--fontColor);
     margin: 0 auto;
     font-size: larger;
 }
 
 .site-info {
-<<<<<<< HEAD
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--fontColor);
     text-align: center;
@@ -234,18 +184,6 @@ width: fit-content; */
     margin: 0 auto;
     position: absolute;
     bottom: 0;
-=======
-    height: fit-content;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-style: oblique;
-    color: var(--fontColor);
-    bottom: 0;
-    position: absolute;
-    text-align: center;
-    line-height: 25px;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
 }
 
 .github-link {
@@ -260,7 +198,6 @@ width: fit-content; */
     border-radius: 50px;
 }
 
-<<<<<<< HEAD
 .main-content {
     margin: 0 auto;
     text-align: center;
@@ -268,43 +205,6 @@ width: fit-content; */
     background: none repeat scroll 0 0 var(--bgColor);
     position: relative;
     height: fit-content;
-=======
-ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    display: inline-block;
-}
-
-li {
-    display: inline-block;
-}
-
-.info-content {
-    margin: 0 auto;
-    height: 100%;
-}
-
-@media screen and (max-width: 461px) {
-    .content {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 384px) {
-    .content {
-        width: 70%;
-    }
-}
-
-.main-content {
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-    background: none repeat scroll 0 0 var(--bgColor);
-    position: relative;
-    height: 100%;
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
 }
 
 .main-content:before {
@@ -326,7 +226,6 @@ li {
     right: -20px;
     width: 20px;
 }
-<<<<<<< HEAD
 
 .full-row {
     background-color: var(--bgColor);
@@ -345,5 +244,3 @@ li {
 .footer {
     color: var(--fontColor);
 }
-=======
->>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
