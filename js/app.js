@@ -33,7 +33,11 @@ function themeChange(tema) {
 };
 
 function show(param) {
+<<<<<<< HEAD
     if (result.innerText == 0) {
+=======
+    if (result.innerHTML == 0) {
+>>>>>>> fd3ba088056e40bc45a881807b99792c24d210eb
         result.innerText = param;
     } else {
         result.innerText += param;
