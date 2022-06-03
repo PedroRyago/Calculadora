@@ -9,25 +9,9 @@
     border: 0;
 }
 
-.display-result {
-    width: 100%;
-    height: 50px;
-    text-align: right;
-    border-radius: 13px 13px 0 0;
-}
-
 #operation,
 #result {
     margin-right: 10px;
-}
-
-.content {
-    margin: 0 auto;
-    border: 2px solid var(--fontColor);
-    margin-top: 5%;
-    border-radius: 15px;
-    background-color: var(--bgColor);
-    padding: 0;
 }
 
 .button {
@@ -35,6 +19,7 @@
     width: 100%;
     font-weight: 500;
     background: var(--bgColor);
+    font-size: xx-large;
 }
 
 .embroidered {
@@ -72,8 +57,6 @@
 }
 
 #result {
-    font-weight: bold;
-    font-size: large;
     color: rgb(0, 183, 255);
 }
 
@@ -94,14 +77,12 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     background: linear-gradient(-45deg, #fc00ff, #00dbde);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -116,22 +97,10 @@ body {
     }
 }
 
-.btn:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .theme-button {
     position: relative;
-    width: 40px;
-    height: 20px;
+    width: 60px;
+    height: 30px;
     border-radius: 25px;
     box-shadow: 0 0 2.5px 0 #39a2db59;
     background-color: rgb(0, 183, 255);
@@ -142,22 +111,20 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
+    width: 30px;
     height: 100%;
     border: 1px solid var(--fontColor);
     border-radius: 50%;
     background-color: #ffffff;
     transition: left 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ball-move {
     left: calc(100% - 20px);
     background-color: #000000;
-}
-
-.theme-container {
-    display: flex;
-    justify-content: center;
 }
 
 .dark-theme {
@@ -170,63 +137,6 @@ body {
     --fontColor: var(--black);
 }
 
-.header-container {
-    color: var(--fontColor);
-    margin: 0 auto;
-    font-size: larger;
-}
-
-.site-info {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--fontColor);
-    text-align: center;
-    line-height: 25px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-}
-
-.github-link {
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-}
-
-.linkedin-link {
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-}
-
-.main-content {
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
-    background: none repeat scroll 0 0 var(--bgColor);
-    position: relative;
-    height: fit-content;
-}
-
-.main-content:before {
-    box-shadow: -20px 0 20px -20px var(--fontColor) inset;
-    content: " ";
-    height: 100%;
-    left: -20px;
-    position: absolute;
-    top: 0;
-    width: 20px;
-}
-
-.main-content:after {
-    box-shadow: 20px 0 20px -20px var(--fontColor) inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 20px;
-}
-
 .full-row {
     background-color: var(--bgColor);
 }
@@ -235,6 +145,7 @@ body {
     background-color: var(--bgColor);
     color: var(--fontColor);
     font-weight: bold;
+    font-size: xx-large;
 }
 
 .header {
@@ -242,5 +153,9 @@ body {
 }
 
 .footer {
+    color: var(--fontColor);
+}
+
+.nav-link:hover {
     color: var(--fontColor);
 }
